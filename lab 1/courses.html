@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Courses</title>
+</head>
+<body>
+<div class="page-header text-center text-primary"><h1>Course Registration App</h1> </div>
+<br>
+<h1 id="name3" class="container-fluid text-primary col-lg-offset-2"></h1>
+<div>
+    <h3 class="text-danger col-lg-offset-3">Search results</h3>
+</div>
+<div class="container-fluid">
+    <div class="col-md-3"></div>
+    <div class="container-fluid col-md-6">
+        <div  id="courses">
+            <div class="panel panel-primary" id="course1">
+                <div class="panel-heading text-left">
+                    <div>Problem Solving and Programming I
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 11749 </p>
+                        <h5> Instructor : Kendall Bingham </h5>
+                        <p> No. of seats left = </p><p id="s1">20</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Problem solving, algorithms and program design</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : Basic Math </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link1">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course2">
+                <div class="panel-heading text-left">
+                    <div>Data Structures
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 11813 </p>
+                        <h5> Instructor : Brian Hare </h5>
+                        <p> No. of seats left = </p><p id="s2">12</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Society and Ethical Obligations of Computer Science</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link2">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course3">
+                <div class="panel-heading text-left">
+                    <div>Introduction to Statistical Learning
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 16706 </p>
+                        <h5> Instructor : Kenneth Mitchell </h5>
+                        <p> No. of seats left</p><p id="s3">53</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Pratical introduction to analytical technics used in computer science</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link3">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course4">
+                <div class="panel-heading text-left">
+                    <div>Software Architecture: Testing & Maintenance
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 14187 </p>
+                        <h5> Instructor : Yijie Han </h5>
+                        <p> No. of seats left = </p><p id="s4">5</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Software testing, Software Process, Software Reuse</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link4">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course5">
+                <div class="panel-heading text-left">
+                    <div>Software Architecture and Design
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 14993 </p>
+                        <h5> Instructor : Yongjie Zheng </h5>
+                        <p> No. of seats left</p><p id="s5">26</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>The course introduces a number of basic concepts and enabling technologies of software architecture</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : CS451R </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link5">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course6">
+                <div class="panel-heading text-left">
+                    <div>Cloud Computing
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 17176 </p>
+                        <h5> Instructor : Baek-Young Choi </h5>
+                        <p> No. of seats left</p><p id="s6">2</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Cloud computing systems operate in a very large scale, and are impacting the economics.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites : CSEE 5110 </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link6">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course7">
+                <div class="panel-heading text-left">
+                    <div>Design and Analysis of Algorithms
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 14992 </p>
+                        <h5> Instructor : Appie Van De Liefvoort </h5>
+                        <p> No. of seats left =</p><p id="s7">32 </p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Combinatorial analysis, searching and sorting, shortest path algorithms</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites :  COMP-SCI 303 </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id ="link7">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course8">
+                <div class="panel-heading text-left">
+                    <div>Contracts II
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 10382 </p>
+                        <h5> Instructor : Irma Russell </h5>
+                        <p> No. of seats left =</p><p id="s8"> 43</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>You must be a student in the School of Law to take this course</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites :  LAW 8501 </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 55min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id = "link8">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course9">
+                <div class="panel-heading text-left">
+                    <div>Civil Procedure I
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 10385 </p>
+                        <h5> Instructor : Ann Marciarille </h5>
+                        <p> No. of seats left = </p><p id="s9">42</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Pleading; joinder of parties and claims; pre-trial motions; discovery; summary judgment; pre-trial and trial procedure.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites :  None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link9">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course10">
+                <div class="panel-heading text-left">
+                    <div>Lawyering Skills I
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 17188</p>
+                        <h5> Instructor : Thomas Nanney </h5>
+                        <p> No. of seats left = </p><p id="s10">6</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Introduction to legal reasoning; case analysis and synthesis; case research.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites :  None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link10">link to Register</a></div>
+
+                </div>
+
+            </div>
+            <div class="panel panel-primary" id="course11">
+                <div class="panel-heading text-left">
+                    <div>Common Law, Legal Analysis & Writing
+                    </div>
+                    <div><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                </div>
+                <div class="panel-body text-center row">
+                    <div class="col-md-4">
+                        <p> class number : 15070 </p>
+                        <h5> Instructor : Thomas Nanney </h5>
+                        <p> No. of seats left</p><p id="s11">12</p>
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-center text-danger"> Course Description</b>
+                        <p>Introduction to legal reasoning; case analysis and synthesis; case research.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>prerequisites :  None </p>
+                        <p>credit hours : 3</p>
+                        <p>duration : 1hr 15min</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="text-right"> <a href="firstpage.html" id="link11">link to Register</a></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="text-center">
+    <a class="btn btn-primary" href="index.html">Go back</a>
+
+</div>
+
+<script src="app1.js"></script>
+
+</body>
+</html>
