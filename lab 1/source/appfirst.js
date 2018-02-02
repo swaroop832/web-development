@@ -193,7 +193,6 @@ function confirm1(){
 
         }
 
-
     }else if(j11!==0){
 
         if(g11===0){
@@ -206,9 +205,6 @@ function confirm1(){
             localStorage.setItem("final11",g11-1);
 
         }
-
-
-    }
-
+        }
 }
 
