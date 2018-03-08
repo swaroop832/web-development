@@ -3,12 +3,14 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cors =require('cors');
+var jsonfile = require('jsonfile');
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/get',function (req,res) {
+var file ='tree.json';
+
 
     var client = new Twitter({
         consumer_key: 'zsqXkaIOiCHXj8NB6wCdzf2Vi',
@@ -17,19 +19,23 @@ app.get('/get',function (req,res) {
         access_token_secret: 'FOWMax3hnTXZS3pPC1GnWs76UHxJCM8s0rmOwEnInxInE'
     });
 
-    var params = {screen_name: 'swaroop995', count :"200"};
+    var params = {screen_name: 'swaroop995', count :"20"};
     client.get('followers/list', params, function(error, tweets, response) {
         if (!error) {
             console.log("received data");
-            res.send(tweets);
-            console.log("sent data")
-        }
+            var tweets1= [];
+            for(i=0; i<tweets.users.length; i++){
+                var obj = {
+                    name : tweets.users[i].name,
+                    friends_count : tweets.users[i].friends_count
+                };
+                tweets1.push(obj);
+            }
+            console.log(tweets1);
+         }
+        jsonfile.writeFile(file, tweets1, function (err) {
+            console.error(err)
+        })
 
-    });
 });
 
-var server = app.listen(8081,function () {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log("Example app listening at http://%s:%s", host, port)
-});
